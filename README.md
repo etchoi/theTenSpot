@@ -6,7 +6,7 @@ Curated Amazon shopping app that takes the guessing out of buying quality produc
 ## Getting Started
 
 > git clone https://github.com/etchoi/theTenSpot.git  
-> cd theTenSpot
+> cd theTenSpot  
 > npm install  
 > npm start  
 
@@ -16,7 +16,7 @@ React
 Redux  
 Webpack
 Express
-Axios - Used to make AJAX calls to Amazon API
+Axios - Used to make AJAX calls to Amazon API  
 Redux-promise - Middleware
 
 
