@@ -4,12 +4,6 @@ var path = require('path');
 var amazon = require('amazon-product-api');
 var api_key = require('./api_private');
 
-var title;
-var feature;
-var review;
-var image;
-
-// app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 var client = amazon.createClient({
@@ -27,15 +21,13 @@ app.get('/search/:term', function(req, res){
   client.itemSearch({
     searchIndex: 'All',
     keywords: req.params.term,
-    responseGroup: 'SalesRank, EditorialReview, ItemAttributes, Images'
+    responseGroup: 'SalesRank, EditorialReview, ItemAttributes, Images, Reviews'
   }).then(function(results){
-    // console.log(results);
     res.json(results);
   }).catch(function(err){
     console.log(err);
     console.log('error');
   });
-  // res.render('pages/search', { title: title, feature: feature, review: review, image: image });
 });
 
 app.listen(8080, function(){

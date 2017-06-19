@@ -14,8 +14,8 @@ Curated Amazon shopping app that takes the guessing out of buying quality produc
 
 React  
 Redux  
-Webpack
-Express
+Webpack  
+Express  
 Axios - Used to make AJAX calls to Amazon API  
 Redux-promise - Middleware
 
