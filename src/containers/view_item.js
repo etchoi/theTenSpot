@@ -5,12 +5,18 @@ import { bindActionCreators } from 'redux';
 
 class ViewItem extends Component {
   render() {
-    return (
-      <div>
-        <h3>Selected Item</h3>
-      </div>
+    if (this.props.view_item.payload) {
+      console.log(this.props.view_item.payload);
+      return (
+        <div>
+          <h3>Selected Item</h3>
+          <p>ASIN: { this.props.view_item.payload.ASIN[0] }</p>
+        </div>
 
-    )
+      )
+    }
+
+    return <div>Select Item</div>
   }
 }
 

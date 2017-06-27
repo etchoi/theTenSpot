@@ -36,7 +36,6 @@ app.get('/item/:id', function(req, res){
   client.itemLookup({
     itemId: req.params.id
   }).then(function(results){
-    console.log(results[0].ASIN[0]);
     res.json(results);
   }).catch(function(err){
     console.log(results);
