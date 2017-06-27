@@ -1,0 +1,18 @@
+.main-banner {
+  height: 400px;
+  width: 100%;
+  background-color: #e8e8e8; }
+  .main-banner h3 {
+    margin: 0;
+    padding: 7% 0 5% 0;
+    text-align: center; }
+
+.customer-comments h4 {
+  margin-top: 10%; }
+
+.white-btn {
+  color: #424242; }
+
+.btn-small {
+  padding: 0 0.5rem;
+  font-size: .8rem; }

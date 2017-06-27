@@ -1,10 +1,12 @@
 var express = require('express');
+var cors = require('cors');
 var app = express();
 var path = require('path');
 var amazon = require('amazon-product-api');
 var api_key = require('./api_private');
 
 app.use(express.static('public'));
+app.use(cors());
 
 var client = amazon.createClient({
   awsId: api_key.awsId,
@@ -13,7 +15,7 @@ var client = amazon.createClient({
 });
 
 // app.get('/', function (req, res){
-//   res.render('index');
+//   res.render('indexasdf');
 // });
 
 app.get('/search/:term', function(req, res){
@@ -29,6 +31,17 @@ app.get('/search/:term', function(req, res){
     console.log('error');
   });
 });
+
+app.get('/item/:id', function(req, res){
+  client.itemLookup({
+    itemId: req.params.id
+  }).then(function(results){
+    console.log(results[0].ASIN[0]);
+    res.json(results);
+  }).catch(function(err){
+    console.log(results);
+  })
+})
 
 app.listen(8080, function(){
   console.log('Listening on Port 8080')
