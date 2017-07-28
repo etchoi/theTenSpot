@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from '../containers/search_bar';
-import CustomerComments from '../components/customer_comments'
+import CustomerComments from '../components/customer_comments';
 
 const MainBanner = () => {
   return (

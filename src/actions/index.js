@@ -13,14 +13,14 @@ export function getSearch(term) {
   };
 }
 
-// export function showItem(id) {
-//   const request = axios.get(`${ROOT_URL}/item/${id}`);
-//   // console.log(GET_ITEM, request);
-//   return {
-//     type: GET_ITEM,
-//     payload: request
-//   };
-// }
+export function showItem(id) {
+  const request = axios.get(`${ROOT_URL}/item/${id}`);
+  // console.log(GET_ITEM, request);
+  return {
+    type: GET_ITEM,
+    payload: request
+  };
+}
 // export function getDetail(item) {
 //   console.log('clicked me');
 // }

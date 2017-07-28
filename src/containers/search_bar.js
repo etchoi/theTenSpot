@@ -7,20 +7,16 @@ import { getSearch } from '../actions/index';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-
     this.state = { term: '', redirect: false};
-
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
   componentDidMount(){
     this.searchInput.focus();
   }
-
   onInputChange(event) {
     this.setState({ term: event.target.value});
   }
-
   onFormSubmit(event) {
     event.preventDefault();
     this.props.getSearch(this.state.term);

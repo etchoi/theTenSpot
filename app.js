@@ -23,7 +23,7 @@ app.get('/search/:term', function(req, res){
   client.itemSearch({
     searchIndex: 'All',
     keywords: req.params.term,
-    responseGroup: 'SalesRank, EditorialReview, ItemAttributes, Images, Reviews'
+    responseGroup: 'SalesRank, ItemAttributes, Images'
   }).then(function(results){
     res.json(results);
   }).catch(function(err){
@@ -34,8 +34,10 @@ app.get('/search/:term', function(req, res){
 
 app.get('/item/:id', function(req, res){
   client.itemLookup({
-    itemId: req.params.id
+    itemId: req.params.id,
+    responseGroup: 'ItemAttributes, Images'
   }).then(function(results){
+    console.log(results);
     res.json(results);
   }).catch(function(err){
     console.log(results);

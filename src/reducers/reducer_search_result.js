@@ -5,7 +5,8 @@ export default function(state = {}, action){
   // console.log('search result reducer');
   switch (action.type){
     case GET_SEARCH:
-      return _.mapKeys(action.payload.data, 'ASIN');
+      // console.log(action.payload.data);
+      return _.mapKeys(action.payload.data, 'SalesRank');
   default:
     return state;
   }
