@@ -1,18 +1,16 @@
 .input-group {
-  margin-top: 5%;
-}
-input-field {
-  text-align: center !important;
-}
+  margin-top: 5%; }
+
 .search-list-item {
   border-bottom: 1px solid silver;
-  padding: 4% 4% 0 4%;
-}
-.search-list-item:hover {
-  background-color: silver;
-}
+  padding: 4% 4% 0 4%; }
+  .search-list-item h6 {
+    vertical-align: center !important;
+    text-align: right;
+    padding: 0 !important; }
+  .search-list-item p {
+    text-align: right; }
 
-.search-list-item h6 {
-  vertical-align: center !important;
-  text-align: right;
-}
+.search-list-item:hover {
+  background-color: #2BBBAD;
+  color: white; }

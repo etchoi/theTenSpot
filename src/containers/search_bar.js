@@ -20,12 +20,7 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
     this.props.getSearch(this.state.term);
-    // const reply = this.props.getSearch();
     this.setState({ term: '', redirect: true });
-    // reply.then(function(res){
-    //   console.log(res.payload.data);
-    // });
-    // this.props.history.push('/showresult');
   }
 
   render() {

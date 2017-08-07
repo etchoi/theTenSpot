@@ -19,7 +19,14 @@ class SearchResultList extends Component {
           <div className="row">
             <img className="col s3"  src={data.SmallImage[0].URL[0]} />
             <h6 className="col s9">{data.ItemAttributes[0].Title[0]}</h6>
-            <p>{'$'+this.formatPrice(data.ItemAttributes[0].ListPrice[0].Amount[0])}</p>
+            { data.ItemAttributes[0].ListPrice[0].Amount[0] ? (
+              <p>{'$'+this.formatPrice(data.ItemAttributes[0].ListPrice[0].Amount[0])}</p>
+            ) : (
+              <p>No Price</p>
+            )}
+
+
+
             <p>{data.SalesRank}</p>
           </div>
         </li>

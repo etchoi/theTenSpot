@@ -57,6 +57,24 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/js\/bin\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/bin\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/bin\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/bin\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/bin\/materialize.js": {
 		"ft": 64,
 		"mi": 1,
@@ -371,6 +389,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/style\/css\/components\/search_result-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/style\/css\/components\/view_item.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/style\/css\/components\/view_item-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1049,6 +1077,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/style\/scss\/search_result.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/style\/css\/components\/search_result.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/style\/scss\/view_item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/style\/css\/components\/view_item.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -1159,15 +1213,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/src\/containers\/item_detail.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/src\/containers\/item_detail-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/src\/containers\/search_bar.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1182,6 +1227,15 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/src\/containers\/search_result_list-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/src\/containers\/view_item.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/src\/containers\/view_item-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1209,6 +1263,15 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/src\/reducers\/reducer_search_result-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/src\/reducers\/reducer_view_item.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/src\/reducers\/reducer_view_item-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

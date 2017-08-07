@@ -5952,11 +5952,11 @@ input[type=range]:focus::-ms-fill-upper {
       height: 8px;
       width: 8px;
       margin: 24px 4px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: #757575;
       transition: background-color .3s;
       border-radius: 50%; }
       .carousel .indicators .indicator-item.active {
-        background-color: #fff; }
+        background-color: #b7b7b7; }
   .carousel.scrolling .carousel-item .materialboxed,
   .carousel .carousel-item:not(.active) .materialboxed {
     pointer-events: none; }
